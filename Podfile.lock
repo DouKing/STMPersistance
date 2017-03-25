@@ -1,0 +1,17 @@
+PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - STMRecord (2.0.1)
+
+DEPENDENCIES:
+  - FMDB
+  - STMRecord
+
+SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  STMRecord: 8fb435cf2cf92db353c8f2ea26ebc3863f433d8b
+
+PODFILE CHECKSUM: 779ef401270f23aec1d498c6bc409fb147bfd814
+
+COCOAPODS: 1.1.1

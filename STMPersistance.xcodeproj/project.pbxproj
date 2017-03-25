@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		007A91EF1E840F4300603B8F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 007A91EE1E840F4300603B8F /* libsqlite3.tbd */; };
+		008C635E1E811B4F00A614B1 /* STMPersistanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C635D1E811B4F00A614B1 /* STMPersistanceTests.m */; };
+		0095F5B51E86485D00FF6D5A /* STMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095F5B21E86485D00FF6D5A /* STMObject.m */; };
+		0095F5B61E86485D00FF6D5A /* STMPersistanceStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095F5B41E86485D00FF6D5A /* STMPersistanceStorage.m */; };
+		0095F5B91E864A2C00FF6D5A /* SimpleDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095F5B81E864A2C00FF6D5A /* SimpleDemoController.m */; };
+		00D45A091E8105E20084C3BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D45A081E8105E20084C3BF /* main.m */; };
+		00D45A0C1E8105E20084C3BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D45A0B1E8105E20084C3BF /* AppDelegate.m */; };
+		00D45A0F1E8105E20084C3BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D45A0E1E8105E20084C3BF /* ViewController.m */; };
+		00D45A121E8105E20084C3BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D45A101E8105E20084C3BF /* Main.storyboard */; };
+		00D45A141E8105E20084C3BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D45A131E8105E20084C3BF /* Assets.xcassets */; };
+		00D45A171E8105E20084C3BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D45A151E8105E20084C3BF /* LaunchScreen.storyboard */; };
+		0A2FDA983AD338059192A448 /* libPods-STMPersistance.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 416F71E2A26625E1873C9F0C /* libPods-STMPersistance.a */; };
+		E3E2A74FF19F7D9A687883F4 /* libPods-STMPersistanceTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A366FD1B2532EE613F74EB93 /* libPods-STMPersistanceTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		008C63601E811B4F00A614B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00D459FC1E8105E20084C3BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00D45A031E8105E20084C3BF;
+			remoteInfo = STMPersistance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		007A91EE1E840F4300603B8F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		008C635B1E811B4F00A614B1 /* STMPersistanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STMPersistanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		008C635D1E811B4F00A614B1 /* STMPersistanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STMPersistanceTests.m; sourceTree = "<group>"; };
+		008C635F1E811B4F00A614B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0095F5B11E86485D00FF6D5A /* STMObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMObject.h; sourceTree = "<group>"; };
+		0095F5B21E86485D00FF6D5A /* STMObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMObject.m; sourceTree = "<group>"; };
+		0095F5B31E86485D00FF6D5A /* STMPersistanceStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMPersistanceStorage.h; sourceTree = "<group>"; };
+		0095F5B41E86485D00FF6D5A /* STMPersistanceStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMPersistanceStorage.m; sourceTree = "<group>"; };
+		0095F5B71E864A2C00FF6D5A /* SimpleDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleDemoController.h; sourceTree = "<group>"; };
+		0095F5B81E864A2C00FF6D5A /* SimpleDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleDemoController.m; sourceTree = "<group>"; };
+		00D45A041E8105E20084C3BF /* STMPersistance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STMPersistance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00D45A081E8105E20084C3BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00D45A0A1E8105E20084C3BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		00D45A0B1E8105E20084C3BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		00D45A0D1E8105E20084C3BF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		00D45A0E1E8105E20084C3BF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		00D45A111E8105E20084C3BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00D45A131E8105E20084C3BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00D45A161E8105E20084C3BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00D45A181E8105E20084C3BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B886E8E09F16037269DEAC2 /* Pods-STMPersistanceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STMPersistanceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STMPersistanceTests/Pods-STMPersistanceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		416F71E2A26625E1873C9F0C /* libPods-STMPersistance.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-STMPersistance.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A366FD1B2532EE613F74EB93 /* libPods-STMPersistanceTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-STMPersistanceTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A457055450614783A5DD0A8B /* Pods-STMPersistance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STMPersistance.release.xcconfig"; path = "Pods/Target Support Files/Pods-STMPersistance/Pods-STMPersistance.release.xcconfig"; sourceTree = "<group>"; };
+		BD09BFE7D6C4948A3ED53506 /* Pods-STMPersistanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STMPersistanceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-STMPersistanceTests/Pods-STMPersistanceTests.release.xcconfig"; sourceTree = "<group>"; };
+		DA9C94FBF7D2025EC5A83A63 /* Pods-STMPersistance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STMPersistance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STMPersistance/Pods-STMPersistance.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		008C63581E811B4F00A614B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3E2A74FF19F7D9A687883F4 /* libPods-STMPersistanceTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D45A011E8105E20084C3BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				007A91EF1E840F4300603B8F /* libsqlite3.tbd in Frameworks */,
+				0A2FDA983AD338059192A448 /* libPods-STMPersistance.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		008C635C1E811B4F00A614B1 /* STMPersistanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				008C635D1E811B4F00A614B1 /* STMPersistanceTests.m */,
+				008C635F1E811B4F00A614B1 /* Info.plist */,
+			);
+			path = STMPersistanceTests;
+			sourceTree = "<group>";
+		};
+		008C639A1E81473300A614B1 /* STMPersistance */ = {
+			isa = PBXGroup;
+			children = (
+				0095F5AF1E86485D00FF6D5A /* Standard */,
+				0095F5B01E86485D00FF6D5A /* Storage */,
+			);
+			path = STMPersistance;
+			sourceTree = "<group>";
+		};
+		0095F5AF1E86485D00FF6D5A /* Standard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Standard;
+			sourceTree = "<group>";
+		};
+		0095F5B01E86485D00FF6D5A /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				0095F5B11E86485D00FF6D5A /* STMObject.h */,
+				0095F5B21E86485D00FF6D5A /* STMObject.m */,
+				0095F5B31E86485D00FF6D5A /* STMPersistanceStorage.h */,
+				0095F5B41E86485D00FF6D5A /* STMPersistanceStorage.m */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		00D459FB1E8105E20084C3BF = {
+			isa = PBXGroup;
+			children = (
+				00D45A061E8105E20084C3BF /* STMPersistance */,
+				008C635C1E811B4F00A614B1 /* STMPersistanceTests */,
+				00D45A051E8105E20084C3BF /* Products */,
+				86610F35D6AB3E9CC714590B /* Pods */,
+				3641B1C4FEB80991C74D5AD6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00D45A051E8105E20084C3BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00D45A041E8105E20084C3BF /* STMPersistance.app */,
+				008C635B1E811B4F00A614B1 /* STMPersistanceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00D45A061E8105E20084C3BF /* STMPersistance */ = {
+			isa = PBXGroup;
+			children = (
+				008C639A1E81473300A614B1 /* STMPersistance */,
+				00D45A0A1E8105E20084C3BF /* AppDelegate.h */,
+				00D45A0B1E8105E20084C3BF /* AppDelegate.m */,
+				00D45A0D1E8105E20084C3BF /* ViewController.h */,
+				00D45A0E1E8105E20084C3BF /* ViewController.m */,
+				0095F5B71E864A2C00FF6D5A /* SimpleDemoController.h */,
+				0095F5B81E864A2C00FF6D5A /* SimpleDemoController.m */,
+				00D45A101E8105E20084C3BF /* Main.storyboard */,
+				00D45A131E8105E20084C3BF /* Assets.xcassets */,
+				00D45A151E8105E20084C3BF /* LaunchScreen.storyboard */,
+				00D45A181E8105E20084C3BF /* Info.plist */,
+				00D45A071E8105E20084C3BF /* Supporting Files */,
+			);
+			path = STMPersistance;
+			sourceTree = "<group>";
+		};
+		00D45A071E8105E20084C3BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00D45A081E8105E20084C3BF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3641B1C4FEB80991C74D5AD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				007A91EE1E840F4300603B8F /* libsqlite3.tbd */,
+				416F71E2A26625E1873C9F0C /* libPods-STMPersistance.a */,
+				A366FD1B2532EE613F74EB93 /* libPods-STMPersistanceTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86610F35D6AB3E9CC714590B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA9C94FBF7D2025EC5A83A63 /* Pods-STMPersistance.debug.xcconfig */,
+				A457055450614783A5DD0A8B /* Pods-STMPersistance.release.xcconfig */,
+				1B886E8E09F16037269DEAC2 /* Pods-STMPersistanceTests.debug.xcconfig */,
+				BD09BFE7D6C4948A3ED53506 /* Pods-STMPersistanceTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		008C635A1E811B4F00A614B1 /* STMPersistanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 008C63641E811B4F00A614B1 /* Build configuration list for PBXNativeTarget "STMPersistanceTests" */;
+			buildPhases = (
+				E41B94C7788A4FBDF216C942 /* [CP] Check Pods Manifest.lock */,
+				008C63571E811B4F00A614B1 /* Sources */,
+				008C63581E811B4F00A614B1 /* Frameworks */,
+				008C63591E811B4F00A614B1 /* Resources */,
+				3998148C6BE0E477A7B6E1A4 /* [CP] Embed Pods Frameworks */,
+				72626E5EDA9BFA10D6F2FD75 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				008C63611E811B4F00A614B1 /* PBXTargetDependency */,
+			);
+			name = STMPersistanceTests;
+			productName = STMPersistanceTests;
+			productReference = 008C635B1E811B4F00A614B1 /* STMPersistanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00D45A031E8105E20084C3BF /* STMPersistance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00D45A1B1E8105E20084C3BF /* Build configuration list for PBXNativeTarget "STMPersistance" */;
+			buildPhases = (
+				AFE663D017AAA16C8A17C553 /* [CP] Check Pods Manifest.lock */,
+				00D45A001E8105E20084C3BF /* Sources */,
+				00D45A011E8105E20084C3BF /* Frameworks */,
+				00D45A021E8105E20084C3BF /* Resources */,
+				72A41A4A5B447F2AC0B05DDA /* [CP] Embed Pods Frameworks */,
+				2E8CD29B837DFC0F2A3658D7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STMPersistance;
+			productName = STMPersistance;
+			productReference = 00D45A041E8105E20084C3BF /* STMPersistance.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00D459FC1E8105E20084C3BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = secoo;
+				TargetAttributes = {
+					008C635A1E811B4F00A614B1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K2VBE95LX6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 00D45A031E8105E20084C3BF;
+					};
+					00D45A031E8105E20084C3BF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K2VBE95LX6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 00D459FF1E8105E20084C3BF /* Build configuration list for PBXProject "STMPersistance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00D459FB1E8105E20084C3BF;
+			productRefGroup = 00D45A051E8105E20084C3BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00D45A031E8105E20084C3BF /* STMPersistance */,
+				008C635A1E811B4F00A614B1 /* STMPersistanceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		008C63591E811B4F00A614B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D45A021E8105E20084C3BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D45A171E8105E20084C3BF /* LaunchScreen.storyboard in Resources */,
+				00D45A141E8105E20084C3BF /* Assets.xcassets in Resources */,
+				00D45A121E8105E20084C3BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E8CD29B837DFC0F2A3658D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STMPersistance/Pods-STMPersistance-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3998148C6BE0E477A7B6E1A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STMPersistanceTests/Pods-STMPersistanceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72626E5EDA9BFA10D6F2FD75 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STMPersistanceTests/Pods-STMPersistanceTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72A41A4A5B447F2AC0B05DDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STMPersistance/Pods-STMPersistance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFE663D017AAA16C8A17C553 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E41B94C7788A4FBDF216C942 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		008C63571E811B4F00A614B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				008C635E1E811B4F00A614B1 /* STMPersistanceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D45A001E8105E20084C3BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0095F5B61E86485D00FF6D5A /* STMPersistanceStorage.m in Sources */,
+				00D45A0F1E8105E20084C3BF /* ViewController.m in Sources */,
+				0095F5B51E86485D00FF6D5A /* STMObject.m in Sources */,
+				00D45A0C1E8105E20084C3BF /* AppDelegate.m in Sources */,
+				0095F5B91E864A2C00FF6D5A /* SimpleDemoController.m in Sources */,
+				00D45A091E8105E20084C3BF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		008C63611E811B4F00A614B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00D45A031E8105E20084C3BF /* STMPersistance */;
+			targetProxy = 008C63601E811B4F00A614B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00D45A101E8105E20084C3BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00D45A111E8105E20084C3BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00D45A151E8105E20084C3BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00D45A161E8105E20084C3BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		008C63621E811B4F00A614B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B886E8E09F16037269DEAC2 /* Pods-STMPersistanceTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K2VBE95LX6;
+				INFOPLIST_FILE = STMPersistanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.secoo.www.STMPersistanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STMPersistance.app/STMPersistance";
+			};
+			name = Debug;
+		};
+		008C63631E811B4F00A614B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD09BFE7D6C4948A3ED53506 /* Pods-STMPersistanceTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K2VBE95LX6;
+				INFOPLIST_FILE = STMPersistanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.secoo.www.STMPersistanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STMPersistance.app/STMPersistance";
+			};
+			name = Release;
+		};
+		00D45A191E8105E20084C3BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00D45A1A1E8105E20084C3BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00D45A1C1E8105E20084C3BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA9C94FBF7D2025EC5A83A63 /* Pods-STMPersistance.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K2VBE95LX6;
+				INFOPLIST_FILE = STMPersistance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.secoo.www.STMPersistance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		00D45A1D1E8105E20084C3BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A457055450614783A5DD0A8B /* Pods-STMPersistance.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K2VBE95LX6;
+				INFOPLIST_FILE = STMPersistance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.secoo.www.STMPersistance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		008C63641E811B4F00A614B1 /* Build configuration list for PBXNativeTarget "STMPersistanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				008C63621E811B4F00A614B1 /* Debug */,
+				008C63631E811B4F00A614B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00D459FF1E8105E20084C3BF /* Build configuration list for PBXProject "STMPersistance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D45A191E8105E20084C3BF /* Debug */,
+				00D45A1A1E8105E20084C3BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00D45A1B1E8105E20084C3BF /* Build configuration list for PBXNativeTarget "STMPersistance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D45A1C1E8105E20084C3BF /* Debug */,
+				00D45A1D1E8105E20084C3BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00D459FC1E8105E20084C3BF /* Project object */;
+}
