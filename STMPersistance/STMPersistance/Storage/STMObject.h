@@ -30,12 +30,14 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)deleteAllFrom:(NSString *)className;
 + (NSUInteger)totalCount:(NSString *)className;
 
-+ (void)asyncFetchAllFrom:(NSString *)className completion:(void (^ _Nullable)(NSArray *lists))completion;
++ (void)asyncFetchWithObjectId:(NSString *)objectId from:(NSString *)className completion:(void (^ _Nullable)(STMObject<RecordType> * _Nullable obj))completion;
++ (void)asyncFetchAllFrom:(NSString *)className completion:(void (^ _Nullable)(NSArray<STMObject<RecordType> *> *lists))completion;
 
 - (void)saveRecord;
 - (void)asyncSaveRecord:(void (^ _Nullable)())completion;
 
 - (void)deleteRecord;
+- (void)asyncDeleteRecord:(void (^ _Nullable)())completion;
 
 @end
 

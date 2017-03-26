@@ -86,7 +86,7 @@
 
 @implementation STMObject (Storage)
 
-+ (STMObject *)fetchWithObjectId:(NSString *)objectId from:(NSString *)className {
++ (STMObject<id> *)fetchWithObjectId:(NSString *)objectId from:(NSString *)className {
   id obj = [[STMPersistanceStorage sharedInstance] fetchJSONObjectWithObjectId:objectId fromTable:className];
   if (!obj || ![obj isKindOfClass:[NSDictionary class]]) {
     return nil;
@@ -94,7 +94,7 @@
   return [[STMObject alloc] initWithClassName:className record:STMCreatRecordWithDictionary(obj)];
 }
 
-+ (NSArray<STMObject *> *)fetchAllFrom:(NSString *)className {
++ (NSArray<STMObject<id> *> *)fetchAllFrom:(NSString *)className {
   NSArray *objs = [[STMPersistanceStorage sharedInstance] fetchAllJSONObjectFromTable:className];
   NSMutableArray<STMObject *> *result = [NSMutableArray arrayWithCapacity:objs.count];
   [objs enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -113,7 +113,15 @@
   return [[STMPersistanceStorage sharedInstance] getCountFromTable:className];
 }
 
-+ (void)asyncFetchAllFrom:(NSString *)className completion:(void (^)(NSArray *))completion {
++ (void)asyncFetchWithObjectId:(NSString *)objectId from:(NSString *)className completion:(void (^)(STMObject<id> *))completion {
+  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+    if (completion) {
+      completion([self fetchWithObjectId:objectId from:className]);
+    }
+  });
+}
+
++ (void)asyncFetchAllFrom:(NSString *)className completion:(void (^)(NSArray<STMObject<id> *> *))completion {
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
     if (completion) {
       completion([self fetchAllFrom:className]);
@@ -130,9 +138,7 @@
 - (void)asyncSaveRecord:(void (^)())completion {
   __weak typeof(self) weakSelf = self;
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-    [[STMPersistanceStorage sharedInstance] updateObject:[weakSelf.record jsonDictionary]
-                                            withObjectId:weakSelf.objectId
-                                                 inTable:weakSelf.className];
+    [weakSelf saveRecord];
     if (completion) {
       completion();
     }
@@ -141,6 +147,16 @@
 
 - (void)deleteRecord {
   [[STMPersistanceStorage sharedInstance] deleteObjectWithObjectId:self.objectId fromTable:self.className];
+}
+
+- (void)asyncDeleteRecord:(void (^)())completion {
+  __weak typeof(self) weakSelf = self;
+  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+    [weakSelf deleteRecord];
+    if (completion) {
+      completion();
+    }
+  });
 }
 
 @end
